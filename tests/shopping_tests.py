@@ -2,11 +2,14 @@ from selenium import webdriver
 from page_objects.shopping_page import ShoppingPage
 import pytest
 import unittest
+import os
 
 
 class ShoppingTests(unittest.TestCase):
+    dirname = os.getcwd()
+    chrome_driver_path = dirname + '\\drivers\\chromedriver.exe'
+    print('chrome path -> ' + chrome_driver_path)
     base_url = 'http://automationpractice.com/index.php'
-    chrome_driver_path = 'C:\\Users\\gaujangr\\eclipse-workspace\\SeleniumPython\\drivers\\chromedriver.exe'
     driver = webdriver.Chrome(executable_path=chrome_driver_path)
     driver.maximize_window()
     driver.implicitly_wait(5)
