@@ -3,12 +3,22 @@
 This is a sample project to automate web application. It is developed as part of python learning. It covers: 
 - Python coding practices
 - Selenium web automation
+- web services request
+- database connectivity - mysql
+
+Install mysql server on machine and run companydb.sql file to setup database schema.
+
+##Python packages to install 
+- pip3 install mysql-connector
+- pip install requests
+- pip install selenium
+
 
 ## To execute python tests
 - Download latest chrome driver and paste it in driver directory in project
 - run below command in terminal
 ```
-py.test tests/shopping_tests.py --html=Htmlreport.html
+py.test tests/<test_file_name>.py --html=Htmlreport.html
 ```
 
 ### Some naming conventions for Python
@@ -55,3 +65,5 @@ Exception classes should end in “Error”
 - Constant names must be fully capitalized
 - Words in a constant name should be separated by an underscore
 ```
+
+

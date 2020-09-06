@@ -90,8 +90,8 @@ class SeleniumDriver():
     def wait_for_element(self, locator, locator_type='id', timeout=10):
         element = None
         try:
-            byType = self.getByType(locator_type)
-            self.log.info("Waiting for maximum :: " + str(timeout) +
+            byType = self.get_by_type(locator_type)
+            print("Waiting for maximum :: " + str(timeout) +
                           " :: seconds for element to be clickable")
             wait = WebDriverWait(self.driver, 10, poll_frequency=1,
                                  ignored_exceptions=[NoSuchElementException,
@@ -99,9 +99,9 @@ class SeleniumDriver():
                                                      ElementNotSelectableException])
             element = wait.until(EC.element_to_be_clickable((byType,
                                                              "stopFilter_stops-0")))
-            self.log.info("Element appeared on the web page")
+            print("Element appeared on the web page")
         except:
-            self.log.info("Element not appeared on the web page")
+            print("Element not appeared on the web page")
             print_stack()
         return element
 

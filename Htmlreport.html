@@ -241,7 +241,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>Htmlreport.html</h1>
-    <p>Report generated on 02-Aug-2020 at 19:42:07 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 16-Aug-2020 at 19:29:25 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -260,8 +260,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.8.1</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 35.33 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 1.25 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -275,63 +275,14 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/shopping_tests.py::ShoppingTests::test_search_multiple_items</td>
-          <td class="col-duration">14.96</td>
+          <td class="col-name">tests/web_service_tests.py::WebServiceTests::test_create_user</td>
+          <td class="col-duration">1.02</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>element found  with id- search_query_top
-text entered in element  withid- search_query_top
-element found  with name- submit_search
-element clicked  withname- submit_search
-elements found  with xpath- //div[@class=&quot;product-count&quot;]
-element text -&gt; Showing 1 - 5 of 5 items
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/shopping_tests.py::ShoppingTests::test_search_single_item</td>
-          <td class="col-duration">2.21</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>element found  with id- search_query_top
-text entered in element  withid- search_query_top
-element found  with name- submit_search
-element clicked  withname- submit_search
-elements found  with xpath- //div[@class=&quot;product-count&quot;]
-element text -&gt; Showing 1 - 1 of 1 item
-elements found  with xpath- //ul[@class=&quot;product_list grid row&quot;]//a[@class=&quot;product-name&quot;]
-element text -&gt; Faded Short Sleeve T-shirts
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/shopping_tests.py::ShoppingTests::test_item_in_cart</td>
-          <td class="col-duration">3.76</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>element found  with xpath- //div[@class=&quot;product-count&quot;]
-element found  with xpath- //ul[@class=&quot;product_list grid row&quot;]//a[@class=&quot;product-name&quot;]
-element found  with xpath- //a[@title=&quot;Add to cart&quot;]/span
-element found  with xpath- //a[@title=&quot;Proceed to checkout&quot;]
-element clicked  withxpath- //a[@title=&quot;Proceed to checkout&quot;]
-elements found  with xpath- //table[@id=&quot;cart_summary&quot;]//p[@class=&quot;product-name&quot;]//a
-element text -&gt; Faded Short Sleeve T-shirts
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/shopping_tests.py::ShoppingTests::test_login_after_checkout</td>
-          <td class="col-duration">7.21</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>element found  with xpath- //p[@class=&quot;cart_navigation clearfix&quot;]//a[@title=&quot;Proceed to checkout&quot;]
-element clicked  withxpath- //p[@class=&quot;cart_navigation clearfix&quot;]//a[@title=&quot;Proceed to checkout&quot;]
-element found  with id- SubmitLogin
-element present  withid- SubmitLogin
-element found  with id- SubmitCreate
-element present  withid- SubmitCreate
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>************* Sending POST Request *************
+Response body -&gt; 
+{&#x27;name&#x27;: &#x27;joseph&#x27;, &#x27;job&#x27;: &#x27;manager&#x27;, &#x27;id&#x27;: &#x27;709&#x27;, &#x27;createdAt&#x27;: &#x27;2020-08-16T13:59:27.249Z&#x27;}
+Response code -&gt; 
+201
 <br/></div></td></tr></tbody></table></body></html>
